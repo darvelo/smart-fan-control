@@ -6,3 +6,7 @@ install-launchd:
 	cp ./com.github.darvelo.smart-fan-control.plist /Library/LaunchDaemons/
 	launchctl unload -w /Library/LaunchDaemons/com.github.darvelo.smart-fan-control.plist
 	launchctl load -w /Library/LaunchDaemons/com.github.darvelo.smart-fan-control.plist
+
+uninstall-launchd:
+	launchctl unload -w /Library/LaunchDaemons/com.github.darvelo.smart-fan-control.plist
+	rm /Library/LaunchDaemons/com.github.darvelo.smart-fan-control.plist
