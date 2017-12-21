@@ -1,5 +1,5 @@
 install:
-	cp ./smart-fan-control.sh /usr/local/sbin/smart-fan-control
+	cp ./smart-fan-control.py /usr/local/sbin/smart-fan-control
 	chmod +x /usr/local/sbin/smart-fan-control
 
 install-launchd:
